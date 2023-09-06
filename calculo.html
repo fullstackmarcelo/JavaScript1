@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <script>
+          const valor = prompt('Ingrese una distancia a recorrer en metros:', ''); 
+
+          if (valor > 0 && valor <= 1000 ){
+            document.write('Debes hacer el recorrido a Pie.');
+          } else if (valor > 1000 && valor <= 10000) {
+            document.write('Debes hacer el recorrido en Bicicleta.');
+          }else if (valor > 10000 && valor <= 30000) {
+            document.write('Debes hacer el recorrido en Colectivo.');
+          }else if (valor > 30000 && valor <= 100000) {
+            document.write('Debes hacer el recorrido en Auto.');
+          } else if (valor > 100000) {
+            document.write('Debes hacer el recorrido en Avión.');
+          }
+      
+      </script>  
+</body>
+</html>

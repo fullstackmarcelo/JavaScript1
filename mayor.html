@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <script>
+          
+        document.write('Dentro de un Array buscamos el número más alto')
+        document.write('<br><br>')
+        document.write('Los valores del array son: [5, 25, 12, 6, 32, 19, 64, 28, 54]')
+        document.write('<br><br>')
+        const numeros = [5, 25, 12, 6, 32, 19, 64, 28, 54]
+          
+        let mayor = 0
+
+        for ( let i = 0; i < 9; i++){
+            if ( mayor < numeros[i]) {
+                mayor = numeros[i]
+            }
+        }
+
+        document.write('El mayor número del Array es: ', mayor)
+
+          
+      </script>  
+</body>
+</html>
